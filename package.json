@@ -1,7 +1,7 @@
 {
   "name": "no-brn-validator",
   "lisence": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./lib/no_brn_validator.js",
   "scripts": {
     "test": "istanbul cover _mocha -- --compilers js:babel/register test && istanbul report cobertura"
