@@ -50,6 +50,10 @@ describe("noBRNValidator", () => {
       expect(isValid("974760673")).to.equal(false);
     });
 
+    it("should return false for a number not starting with 8 or 9", () => {
+      expect(isValid("028348398")).to.equal(false);
+    });
+
     it("should return true for a correct number", () => {
       sandbox.stub(noBRNValidator, "calculateChecksum").returns("3");
 
